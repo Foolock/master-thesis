@@ -1,0 +1,5 @@
+the difference of this controller from the outside controller is that the complete process of getting input data and weight data from bram and write output data to bram is finished for this controller.
+
+Note that in testbench, checkbram is enabled to check if bram write is correct.
+
+*bram: 5000 read and write depth, for read, address is 2 cycles ahead of output, for write, address is 1 cycles ahead of input.(results may vary in other design)
