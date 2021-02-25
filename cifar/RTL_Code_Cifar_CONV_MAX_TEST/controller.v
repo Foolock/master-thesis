@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module controller(clk,rst,start,w,in,state,countin,countw,countcal,countpe,ctlpe,ctlbw,ctlbin,loadin_finish,loadw_finish,cal_finish,pixel_finish,picture_finish,output_finish,buffer,ins_array,ws_array,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,row1_in_output,outs_array,input_buffer,input_address,wea,memaddr,mem_out,mem_in,
+module controller(clk,rst,start,w,in,state,countin,countw,countcal,countpe,ctlpe,ctlbw,ctlbin,loadin_finish,loadw_finish,cal_finish,pixel_finish,picture_finish,output_finish,buffer,ins_array,ws_array,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,row1_in_output,outs_array,input_buffer,input_address,wea_w,memaddr,mem_out,mem_in,
 do,di,dr,dc,dkc,dkr,io,ii,ir,ic,ikr,ikc,filter_size,
 inaddr,waddr,outaddr,
 checkbram,check_finish,countch,
@@ -584,7 +584,8 @@ output[4*width-1:0] input_address;
 systolic_array #(.width(width),.decimal(decimal),.rows(rows),.cols(cols),.vector(vector)) s0(clk,rst,ctlpe,ctlbw,ctlbin,w,in,buffer,ins_array,ws_array,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,row1_in_output,outs_array,input_buffer,input_address);
 
 //output reg ena;
-output reg wea;
+//output reg wea;
+reg wea;
 output reg[memaddrbit-1:0] memaddr;
 input[memaddrbit-1:0] memaddr_check;
 //wire[memaddrbit-1:0] memaddr_w;
@@ -607,7 +608,7 @@ assign in = (state == LOADIN)? mem_out:0;
 assign w = (state == LOADW)? mem_out:0;
 
 //for memory wea signal, wea is for CONV operations, mp_wea is for max pooling operations
-wire wea_w;
+output wea_w;
 wire mp_wea;//wea signal for max pooling layer
 assign wea_w = (state == MAXPOOLING)?mp_wea:wea;
 
