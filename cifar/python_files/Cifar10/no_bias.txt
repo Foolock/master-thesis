@@ -1,0 +1,49 @@
+(base) EricMacpro:Cifar10 boyangzhang$ python nopadding.py 
+Files already downloaded and verified
+Files already downloaded and verified
+epoch : 1
+training loss: 1.6408, acc 40.0900 
+validation loss: 1.3899, validation acc 48.4500 
+epoch : 2
+training loss: 1.3489, acc 51.7220 
+validation loss: 1.2129, validation acc 56.2100 
+epoch : 3
+training loss: 1.2116, acc 57.3940 
+validation loss: 1.1467, validation acc 59.5300 
+epoch : 4
+training loss: 1.1222, acc 60.5520 
+validation loss: 1.0377, validation acc 63.4800 
+epoch : 5
+training loss: 1.0531, acc 63.3660 
+validation loss: 0.9505, validation acc 67.0700 
+epoch : 6
+training loss: 0.9994, acc 65.1100 
+validation loss: 0.9338, validation acc 67.6700 
+epoch : 7
+training loss: 0.9539, acc 66.8340 
+validation loss: 0.8798, validation acc 69.4500 
+epoch : 8
+training loss: 0.9166, acc 68.1800 
+validation loss: 0.8561, validation acc 70.2900 
+epoch : 9
+training loss: 0.8789, acc 69.4460 
+validation loss: 0.8422, validation acc 70.6300 
+epoch : 10
+training loss: 0.8472, acc 70.7200 
+validation loss: 0.8328, validation acc 70.9300 
+epoch : 11
+training loss: 0.8227, acc 71.1220 
+validation loss: 0.8008, validation acc 72.3400 
+epoch : 12
+training loss: 0.8038, acc 72.0760 
+validation loss: 0.7874, validation acc 72.7600 
+epoch : 13
+training loss: 0.7797, acc 73.0060 
+validation loss: 0.7802, validation acc 73.4500 
+epoch : 14
+training loss: 0.7676, acc 73.3280 
+validation loss: 0.7844, validation acc 73.0500 
+epoch : 15
+training loss: 0.7405, acc 74.3800 
+validation loss: 0.7594, validation acc 74.1700 
+(base) EricMacpro:Cifar10 boyangzhang$ 
