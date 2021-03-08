@@ -1,9 +1,0 @@
-Post Synthesis Timing Simulation takes too long
-
-#1 testbench writing style, being more RTL like will lower the simulation speed a lot
-
-#2 Unifast Library for simu,
-set_property xelab.unifast true [current_fileset -simset]
-
-#3 frequent memory access
-
