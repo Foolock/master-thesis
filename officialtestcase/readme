@@ -1,2 +1,2 @@
 This is the testcase for TAMU. 
-For their testcase, the memory address control part is removed from the controller to minimize the size of the controller part.
+For their testcase, the memory address control part is removed from the controller to minimize the size of the controller part(irregular).
